@@ -96,7 +96,7 @@ pub const Record = extern struct {
     pub fn halfUnder(self: Record, other: Record) Record {
         if (self.overlapsWith(other) and self.start < other.start) {
             return .{
-                .tag = other.tag,
+                .tag = self.tag,
                 .start = self.start,
                 .size = other.start - self.start,
             };
