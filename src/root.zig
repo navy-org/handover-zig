@@ -90,7 +90,6 @@ pub const Record = extern struct {
         const tag: Tags = @enumFromInt(self.tag);
         return tag == Tags.FREE or
             tag == Tags.LOADER or
-            tag == Tags.KERNEL or
             tag == Tags.RESERVED;
     }
 
