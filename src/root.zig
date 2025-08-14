@@ -134,7 +134,7 @@ pub const Payload = extern struct {
 
 pub const Request = extern struct {
     tag: u32,
-    flags: u32,
+    flags: u32 = 0,
     misc: u64 = 0,
 };
 
